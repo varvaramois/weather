@@ -1,0 +1,161 @@
+body {
+  background: #f9c9c3;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 40px;
+  overflow: hidden;
+}
+.circle {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(235, 162, 162);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-180%, -110%);
+  z-index: -1;
+}
+.c1 {
+  transform: translate(-90%, -80%);
+  width: 250px;
+  height: 250px;
+  background-color: rgb(227, 143, 143);
+}
+.c2 {
+  transform: translate(-10%, -55%);
+  width: 600px;
+  height: 600px;
+  top: 80%;
+  left: 80%;
+  background-color: rgb(205, 150, 150);
+}
+.c3 {
+  transform: translate(-360%, 25%);
+  width: 330px;
+  height: 330px;
+  top: 50%;
+  left: 80%;
+  background-color: rgb(239, 153, 153);
+}
+.c5 {
+  transform: translate(-10%, -55%);
+  width: 600px;
+  height: 600px;
+  top: 80%;
+  left: 80%;
+  background-color: rgb(205, 150, 150);
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.hero {
+  flex: 1;
+  max-width: 600px;
+}
+
+.title {
+  font-size: 48px;
+  color: #5e2d2d;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.input-group {
+  display: flex;
+  gap: 15px;
+  padding-top: 30px;
+}
+
+.input {
+  flex: 1;
+  padding: 15px 25px;
+  border-radius: 50px;
+  border: 2px solid #bca6a0;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  background-color: #ffe2e2;
+  color: #6e4c47;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #855050;
+  box-shadow: 0 0 5px rgba(133, 80, 80, 0.4);
+}
+
+.btn {
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  background-color: #ac6161;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #a06666;
+}
+
+.content {
+  margin-top: 40px;
+  background: #ffe2e2;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+.hidden {
+  display: none;
+}
+.city,
+.tempa,
+.weather,
+.wind-speed {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #5b3a3a;
+}
+
+.city {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.tempa {
+  font-size: 48px;
+  color: #b46060;
+}
+
+.weather {
+  font-size: 28px;
+}
+
+.wind-speed {
+  font-size: 22px;
+  color: #444;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
